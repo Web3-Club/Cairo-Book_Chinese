@@ -8,7 +8,7 @@ Cairo是一个图灵完备的用于通用可证明计算的编程语言，也是
 
 Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
 
-cairo-book.github.io 是一个项目页面，旨在为Cairo这个图形库提供文档、教程和示例代码等资源。
+[cairo-book.github.io](https://cairo-book.github.io/) 是一个项目页面，旨在为Cairo这个智能合约开发语言提供文档、教程和示例代码等资源。
 
 本项目为该项目的中文翻译项目
 
