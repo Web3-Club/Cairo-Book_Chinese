@@ -1,0 +1,9 @@
+[book]
+authors = ["Wong Shouhao"]
+language = "zh-cn"
+multilingual = false
+src = "src"
+title = "Cairo Book 中文"
+
+[output.html.playground]
+runnable = false
