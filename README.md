@@ -29,7 +29,7 @@
 
 ## ⚠️ 免责声明
 
-This web page "Web3 Wiki" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. 
+This web page "Cairo-Book_Chinese" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. 
    
 You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. 
 
