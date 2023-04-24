@@ -4,6 +4,13 @@
 
 [Cairo-Book](cairo.web3wiki.site) 中文翻译
 
+## ❤️ 项目贡献者
+**永远感谢他们为本项目所作出的贡献！**
+
+[![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Cairo-Book_Chinese)](https://github.com/Web3-Club/Cairo-Book_Chinese/graphs/contributors)
+
+技术顾问：[Menci](https://github.com/Menci)
+
 ## 💐 赞助我们 
 🪙 ``0xBBc1fE874422F61fB135e72C3229Fffc3Cb266Fb``
 
