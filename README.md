@@ -4,9 +4,11 @@
 
 [Cairo-Book](cairo.web3wiki.site) 中文翻译
 
-Cairo是一个图灵完备的用于通用可证明计算的编程语言，也是写Starknet智能合约的语言。Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
+Cairo是一个图灵完备的用于通用可证明计算的编程语言，也是编写Starknet智能合约的语言。
 
+Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
 
+cairo-book.github.io 是一个项目页面，旨在为Cairo这个图形库提供文档、教程和示例代码等资源。
 
 ## ❤️ 项目贡献者
 **永远感谢他们为本项目所作出的贡献！**
