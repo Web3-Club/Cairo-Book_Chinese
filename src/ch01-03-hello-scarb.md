@@ -1,5 +1,5 @@
 # Hello, Scarb!
-# Scarb 包管理器
+## Scarb 包管理器
 
 Scarb 是Cairo的包管理器，受到 Rust 构建系统和包管理器 Cargo 的启发。它可以处理诸如构建代码、下载所需库以及构建这些库等多个任务。
 
