@@ -44,10 +44,13 @@ mod hello_scarb;
 
 文件名：src/hello_scarb.cairo
 
+
+```
 use debug::PrintTrait;
 fn main() {
     'Hello, Scarb!'.print();
 }
+```
 
 我们刚刚创建了一个名为lib.cairo的文件，其中包含一个模块声明引用了另一个名为“hello_scarb”的模块，以及包含“hello_scarb”模块的实现细节的文件hello_scarb.cairo。
 
