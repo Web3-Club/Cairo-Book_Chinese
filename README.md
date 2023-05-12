@@ -26,7 +26,6 @@ Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Cairo-Book_Chinese)](https://github.com/Web3-Club/Cairo-Book_Chinese/graphs/contributors)
 
-技术顾问：[Menci](https://github.com/Menci)
 
 ## 💐 赞助我们 
 🪙 ``0xBBc1fE874422F61fB135e72C3229Fffc3Cb266Fb``
