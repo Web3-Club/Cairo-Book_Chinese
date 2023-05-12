@@ -14,6 +14,7 @@ Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
 
 ## 目录
 ### [导论](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch00-00-introduction.md)
+### [前言](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch00-01-foreword.md)
 ### 第一章
 - 开始
     - [安装](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch01-01-installation.md)
