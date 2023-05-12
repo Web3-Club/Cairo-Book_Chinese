@@ -14,10 +14,10 @@ Cairo最新版本为 1.0，基于Rust，并且在快速迭代。
 
 ## 目录
 第一章
-- [开始]（）
-    - [安装]()
-    - [Hello World]()
-    - [Hello Scarb]()
+- 开始
+    - [安装](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch01-01-installation.md)
+    - [Hello World](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch01-02-hello-world.md)
+    - [Hello Scarb](https://github.com/Web3-Club/Cairo-Book_Chinese/blob/main/src/ch01-03-hello-scarb.md)
 
 ## ❤️ 项目贡献者
 **永远感谢他们为本项目所作出的贡献！**
