@@ -92,4 +92,27 @@ fn main() {
     let my_u128: u128 = my_u64.into();
     // As a felt252 is smaller than a u256, we can use the into() method
     let my_u256: u256 = my_felt252.into();
-    let my_usize: usize = my_felt252.try_into().
+    let my_usize: usize = my_felt252.try_into().要从元组中获取单个值，我们可以使用模式匹配来解构元组值，就像这样：
+
+use debug::PrintTrait;
+fn main() {
+    let tup = (500, 6, true);
+
+    let (x, y, z) = tup;
+
+    if y == 6 {
+        'y is six!'.print();
+    }
+}
+
+
+该程序首先创建一个元组并将其绑定到变量tup。然后使用带有let的模式将tup变成三个单独的变量x、y和z。这称为解构，因为它将单个元组分成三个部分。最后，程序打印y is six，因为y的值为6。
+
+我们还可以同时声明元组的值和类型。例如：
+fn main() {
+    let (x, y): (i32, i32) = (2, 3);
+}
+
+单元类型()
+
+单元类型是仅有一个值()的类型。它表示一个没有元素的元组。它的大小始终为零，并且保证不会存在于编译后的代码中。
