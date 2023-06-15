@@ -26,4 +26,70 @@ Felt类型
 
 整数类型
 
-felt252类型是一种基本类型，用作创建核心库中所有类型的基础。然而，强烈建议程序员只要可能就使用整数类型而不是felt252类型，因为整数类型带有附加的安全功能，可以提供额外的保护以防止代码中潜在的漏洞，例如溢出检查。通过使用这些整数类型，程序员可以确保他们的程序更加安全，并且不太容易受到攻击或其他安全威胁的影响。整数是没有分数部分的数字。此类型声明指示程序员可以用来存储整数的比特数。表3-1显示了Cairo中的内置整数类型。我们可以
+felt252类型是一种基本类型，用作创建核心库中所有类型的基础。然而，强烈建议程序员只要可能就使用整数类型而不是felt252类型，因为整数类型带有附加的安全功能，可以提供额外的保护以防止代码中潜在的漏洞，例如溢出检查。通过使用这些整数类型，程序员可以确保他们的程序更加安全，并且不太容易受到攻击或其他安全威胁的影响。整数是没有分数部分的数字。此类型声明指示程序员可以用来存储整数的比特数。表3-1显示了Cairo中的内置整数类型。我们可以关于如何选择使用哪种类型的整数？尝试估计您的整数可以具有的最大值并选择合适的大小。使用usize的主要情况是在索引某种集合时。
+
+数字运算
+
+Cairo支持您预期的所有整数类型的基本数学运算：加法，减法，乘法，除法和余数运算。整数除法向最接近的整数向零截断。以下代码显示了您将如何在let语句中使用每个数值操作：
+
+fn main() {
+    // addition
+    let sum = 5_u128 + 10_u128;
+
+    // subtraction
+    let difference = 95_u128 - 4_u128;
+
+    // multiplication
+    let product = 4_u128 * 30_u128;
+
+    // division
+    let quotient = 56_u128 / 32_u128; // result is 1
+    let quotient = 64_u128 / 32_u128; // result is 2
+
+    // remainder
+    let remainder = 43_u128 % 5_u128; // result is 3
+}
+
+这些语句中的每个表达式都使用数学运算符并评估为单个值，然后将其绑定到变量中。付录B包含Cairo提供的所有运算符的列表。
+
+布尔类型
+
+与大多数其他编程语言一样，Cairo中的布尔类型具有两个可能的值：true和false。布尔值的大小为一个felt252（注意和Python等其他语言可能不同）。Cairo中的布尔类型是使用bool指定的。例如：
+
+fn main() {
+    let t = true;
+
+    let f: bool = false; // with explicit type annotation
+}
+
+
+使用布尔值的主要方法是通过条件语句，例如if表达式。我们将在“控制流”部分中介绍if表达式的工作方式。
+
+短字符串类型
+
+Cairo没有原生的字符串类型，但可以将形成我们称之为“短字符串”的字符存储在felt252中。短字符串最大长度为31个字符。这是为了确保它可以适合单个felt中（一个felt为252位，一个ASCII字符为8位）。以下是在单引号之间放置的声明值的一些示例：
+
+    let my_first_char = 'C';
+    let my_first_string = 'Hello world';
+
+
+类型转换
+
+在Cairo中，可以使用TryInto和Into特征提供的try_into和into方法将标量类型从一种类型转换为另一种类型。在目标类型可能不适合源值的情况下，try_into方法允许安全类型转换。请记住，try_into返回Option <T>类型，您需要解包它以访问新值。另一方面，当成功保证时，例如当源类型小于目标类型时，可以使用into方法进行类型转换。要执行转换，请在源值上调用var.into（）或var.try_into（），以将其转换为另一种类型。必须明确定义新变量的类型，如下例所示：
+
+`
+use traits::TryInto;
+use traits::Into;
+use option::OptionTrait;
+
+fn main() {
+    let my_felt252 = 10;
+    // Since a felt252 might not fit in a u8, we need to unwrap the Option<T> type
+    let my_u8: u8 = my_felt252.try_into().unwrap();
+    let my_u16: u16 = my_u8.into();
+    let my_u32: u32 = my_u16.into();
+   let my_u64: u64 = my_u32.into();
+    let my_u128: u128 = my_u64.into();
+    // As a felt252 is smaller than a u256, we can use the into() method
+    let my_u256: u256 = my_felt252.into();
+    let my_usize: usize = my_felt252.try_into().
